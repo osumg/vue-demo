@@ -4,9 +4,11 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 import home from './home'
+import vuex from './vuex';
 
 const modules = {
-  home
+  home,
+  vuex
 }
 
 const store = new Vuex.Store({

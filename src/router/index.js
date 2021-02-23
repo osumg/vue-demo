@@ -5,6 +5,7 @@ const Home = () => import('../views/home/Home');
 const Account = () => import('../views/account/Account');
 const Statistics = () => import('../views/statistics/Statistics');
 const Cmp = () => import('../views/cmp/Cmp');
+const Vuex = () => import('../views/vuex/Vuex');
 
 Vue.use(VueRouter)
 
@@ -28,9 +29,14 @@ const routes = [
       {
         path: '/statistics',
         component: Statistics
-      },{
-      path:'/cmp',
+      },
+      {
+        path: '/cmp',
         component: Cmp
+      },
+      {
+        path: '/vuex',
+        component: Vuex
       }
     ]
   },

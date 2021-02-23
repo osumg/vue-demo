@@ -1,9 +1,10 @@
 <template>
   <div id="cmp">
     <CusListRow :title="title" :content="content" @acceptMsg="acceptMsg">
-      <!--      <template v-slot:first>first slot</template>-->
-      <!--      <template v-slot:second>second slot</template>-->
-      <!--      <template v-slot:third>third slot</template>-->
+      <!--具名组件-->
+      <template v-slot:first>first slot</template>
+      <template v-slot:second>second slot</template>
+      <template v-slot:third>third slot</template>
       <div>
         我是slot
       </div>

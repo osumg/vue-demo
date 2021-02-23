@@ -7,9 +7,11 @@
     <button @click="sendMsg">向父组件发送消息</button>
     <Second></Second>
     <div>以下是slot:
-<!--      第一个：<slot name="first"></slot>-->
-<!--      第二个：<slot name="second"></slot>-->
-<!--      第三个：<slot name="third"></slot>-->
+      <br>
+      具名组件》》》
+      第一个：<slot name="first"></slot>
+      第二个：<slot name="second"></slot>
+      第三个：<slot name="third"></slot>
 
       <slot></slot>
     </div>
