@@ -30,18 +30,17 @@
             <Submenu name="1">
               <template slot="title">
                 <Icon type="ios-navigate"></Icon>
-                主体
+                用户
               </template>
-              <MenuItem name="1-1" @click.native="toView('account',['主体','用户'])">用户</MenuItem>
-              <MenuItem name="1-2" @click.native="toView('statistics',['主体','数据统计'])">数据统计</MenuItem>
-              <MenuItem name="1-3">Option 3</MenuItem>
+              <MenuItem name="1-1" @click.native="toView('account',['用户','用户'])">用户信息</MenuItem>
+              <MenuItem name="1-2" @click.native="toView('statistics',['用户','数据统计'])">数据统计</MenuItem>
             </Submenu>
             <Submenu name="2">
               <template slot="title">
                 <Icon type="ios-keypad"></Icon>
-                Item 2
+                主体
               </template>
-              <MenuItem name="2-1">Option 1</MenuItem>
+              <MenuItem name="2-1" @click.native="toView('cmp',['主体','自定义组件'])">自定义组件</MenuItem>
               <MenuItem name="2-2">Option 2</MenuItem>
             </Submenu>
             <Submenu name="3">
