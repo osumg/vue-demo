@@ -36,6 +36,9 @@ const routes = [
       },
       {
         path: '/vuex',
+        meta: {
+          roles: ['admin']
+        },
         component: Vuex
       }
     ]
@@ -46,6 +49,17 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  console.log(to);
+  // if (to.meta.roles && to.meta.roles.includes('admin')) {
+  //   next({path: '/account'})
+  // } else {
+  //   next();
+  // }
+
+  next();
 })
 
 export default router
